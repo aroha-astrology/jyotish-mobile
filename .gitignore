@@ -1,0 +1,65 @@
+# dependencies
+node_modules
+.pnpm-debug.log
+
+# expo / metro / turbo
+.expo/
+expo-env.d.ts
+.turbo/
+
+# build outputs
+build/
+dist/
+android/app/build/
+android/.gradle/
+android/local.properties
+android/app/release/
+ios/build/
+ios/Pods/
+*.apk
+*.aab
+*.app
+*.ipa
+
+# env — public repo, block all variants
+.env
+.env.*
+!.env.example
+
+# Android signing — NEVER commit these. They control who can ship updates to Play Store.
+*.jks
+*.keystore
+credentials.json
+google-services.json
+
+# iOS provisioning / signing
+*.mobileprovision
+*.p12
+*.p8
+AuthKey_*.p8
+GoogleService-Info.plist
+
+# secrets of any flavor
+*.key
+*.pem
+*.pfx
+*.gpg
+*credential*
+*secret*
+*service-account*.json
+*service_account*.json
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# logs / coverage / test
+*.log
+coverage/
+
+# misc
+.claude/
+*.pdf
